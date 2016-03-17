@@ -1,0 +1,1650 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,500|Roboto:300,400,700,900,700italic,400italic&subset=latin,latin-ext);
+
+/*** működéshez **/
+
+
+
+#szamlacim_wrap {
+    height: 400px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+#same_address:checked ~ #szamlacim_wrap {
+    height: 0;   
+}
+
+
+/****/
+
+
+html, body {
+    height:100%;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/assets/images/body-bg.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    overflow-x: hidden;
+}
+
+
+.wrapper {
+    width: 995px;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+    min-height: 63%;
+}
+
+.clear {
+    clear: both;
+}
+
+/* fomenu */
+
+#fomenu_wrap {
+    height: 36px;   
+}
+
+.gombsor li {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.gombsor li:last-child {
+    margin-right: 0;
+}
+
+.gombsor li a {
+    transition: .2s;
+    display: block;
+    border-radius: 0 0 10px 10px;
+    text-decoration: none;
+    padding: 9px 17px 8px 32px;
+    color: white;
+    font-weight: 700;
+    font-size: 13.5px;
+    background-repeat: no-repeat;
+    background-position: left 8px bottom 8px;
+    letter-spacing: .1px;
+}
+
+.gombsor li:hover a {
+    padding-top: 12px;
+/*    background-position: left 8px bottom 8px;*/
+}
+
+#kek_gombsor {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#narancs_gombsor {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#kek_gombsor li a {
+    background-color: #0F70B7;   
+}
+
+#narancs_gombsor li a {
+    background-color: #F29401;
+}
+
+#kek_gombsor li.vilagoskek a {
+    background-color: #009FE3;   
+}
+
+#kek_gombsor li.vekony {
+    width: 154px;
+    line-height: 14px;    
+    text-align: left;
+}
+
+#kek_gombsor li.vekony a {
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    padding-right: 0;
+
+}
+
+.uzenet {
+    margin: 24px;
+    color: #006EBA;
+    line-height: 1.2em;
+}
+
+#kosar-menu {
+    min-width: 154px;
+    text-align: center;
+}
+
+.kosar-icon a       {background-image: url('/assets/images/icon-kosar.png');}
+.pencil-icon a      {background-image: url('/assets/images/icon-pencil.png');}
+.lock-icon a        {background-image: url('/assets/images/icon-lock.png');}
+.list-icon a        {background-image: url('/assets/images/icon-list.png');}
+.hammer-icon a        {background-image: url('/assets/images/icon-hammer.png');}
+.clipboard-icon a   {background-image: url('/assets/images/icon-clipboard.png');}
+.navigation-icon a  {background-image: url('/assets/images/icon-navigation.png');}
+
+
+
+/* logo es kereses */
+
+#almenu-wrap {
+    padding-top: 5px;   
+    height: 92px;
+}
+
+#logo {
+    width: 220px;
+    height: 91px;
+    margin-left: -64px;
+    float: left;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#searchField {
+    border: 4px solid #009FE3;
+    border-radius: 10px;
+    width: 240px;
+    height: 24px;
+    margin-left: 8px;
+    background-image: url('/assets/images/icon-search.png');
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+    padding-left: 23px;
+    cursor: text;
+}
+
+#searchField:focus {
+    cursor: pointer;
+}
+
+#almenu {
+    display: block;
+    float: left;
+    margin-left: 12px;
+    margin-top: 22px;
+        
+}
+
+#almenu li {
+    display: inline-block;
+    color: #2F7DBC;
+    font-weight: 700;
+}
+
+#almenu li:after {
+    content: ' |';
+    margin-right: 5px;
+} 
+
+#almenu li:last-child:after {
+    content: '';
+} 
+
+#almenu li a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: lowercase;
+}
+
+#almenu li a:hover {
+    text-decoration: underline;
+}
+
+#kozep-wrap {
+    float: left;
+
+}
+
+#unisec {
+    border: none;
+    float: right;
+    width: 154px;
+    height: 91px;
+    cursor: pointer;
+}
+
+#unisec:hover {
+    opacity: .8;   
+}
+
+
+  /** termekek **/
+
+
+.main-wrap {
+    min-height: 70%;   
+}
+
+.fokeret {
+    border-radius: 18px;
+    overflow: hidden;
+    margin-top: 9px;
+    min-height: 300px;
+    border-width: 3px;
+    border-style: solid;
+    background-color: white;
+    min-height: 250px;
+    position: relative;
+}
+
+.fokeret.kek {
+    border-color: #009FE3;
+   
+}
+
+#productlist-header,
+#productlist-footer {
+    background-color: #009FE3;
+    width: 100%;
+    height: 50px;
+}
+
+#productlist-header h3,
+#productlist-footer p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 21px;
+    margin: 18px 5px 0 24px;
+    float: left;
+}
+
+#productlist-header h4 {
+    color: white;
+    text-transform: lowercase;
+    font-size: 21px;
+    margin: 18px 24px 0 0;
+    float: left;
+    font-weight: 300;
+}
+
+#productlist-header h4:before {
+    content: ' | ';
+}
+
+.szuresek {
+    float: right;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.select-style {
+    padding: 0px;
+    margin: 0px 12px -5px 0px;
+    border: medium none;
+    width: 204px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    background: rgb(0, 155, 226) url("/assets/images/select-nyil.png") no-repeat scroll 96% 50%;
+}
+
+.select-style select {
+    padding: 3px 8px;
+    width: 130%;
+    font-family: "Roboto Condensed";
+    color: #FFF;
+    border: medium none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    cursor: pointer;
+    font-size: 16px;
+    height: 31px;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.select-style select option {
+    font-size: 12px;
+}
+
+.product {
+    padding: 11px 8px;   
+    overflow: hidden;
+    position: relative;
+}
+
+.productlist-body:hover .szurke {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #ede6e6;
+    opacity: .1;
+    
+}
+
+.product:hover .szurke {
+        opacity: 0;
+
+}
+
+
+.product .list-img-wrap {
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.product:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    width: 950px;
+    border-bottom: 1px solid #009FE3;
+}
+
+.product:last-child:after {
+    border: none;   
+}
+
+.price_wrap {
+    float: left;
+    color: #009FE3;
+    padding: 22px 12px;
+}
+
+.price_wrap span[itemprop="name"] {
+    font-weight: 700;
+    font-size: 19px;
+
+}
+.price_wrap span[itemprop="price"] {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.price_wrap .product-desc {
+    display: block;
+    color: #5D5D5D;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.price_wrap:hover {
+    color: #03b0fa;
+}
+
+.price_wrap a {
+    color: inherit;
+}
+
+.product form {
+    position: absolute;
+    right: 12px;
+}
+
+.kosarba_gomb {
+    background-color: #0F70B7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px 10px 34px;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: .8px;
+    background-image: url('/assets/images/icon-kosar.png');
+    background-repeat: no-repeat;
+    background-position: left 12px bottom 12px;
+    cursor: pointer;    
+}
+
+.lista_kosarba_gomb {
+    margin: 24px 50px;
+}
+
+.kosarba_gomb:hover {
+    background-color: #287fbf;   
+}
+
+.kosar_minta {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.opcio-valasztas {
+    color: #0F70B7;
+    font-weight: 700;
+    margin: 34px 50px;
+    display: block;
+}
+
+.opcio-valasztas:hover {
+    text-decoration: underline;
+}
+
+#rendelesre {
+    position: absolute;
+    left: 751px;
+    top: 25px;
+    font-size: 16px;
+    color: #676464;
+}
+
+
+#loadingImg {
+    display: none;
+    position: absolute;
+    top: 172px;
+    left: 114px;    
+}
+
+#test-alert {
+    background: #e3a6a6;   
+    color: darkred;
+    padding: 6px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/** footer **/
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #0F70B7;
+    margin-top: 22px;
+    padding-bottom: 12px;
+    overflow: hidden;
+}
+
+#foot-wrap {
+    padding: 22px 0;   
+    vertical-align: top;
+}
+
+#foot-menu {
+    vertical-align: top;
+    padding-top: 8px;
+    display: inline-block;
+    max-width: 620px;    
+}
+
+#foot-menu a {
+    color: white;
+    font-family: 'Roboto Condensed';
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.6em;
+    font-weight: 300;
+    letter-spacing: .2px;
+}
+
+#foot-menu a:hover {
+    text-decoration: underline;
+}
+
+#foot-menu > li > a {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .8px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+#foot-menu .sub {
+    display: inline-block;
+}
+
+#foot-menu .sub > li {
+    display: inline-block;
+}
+
+#foot-menu .sub > li:after {
+    content: ' | ';
+    color: white;
+    margin-right: 4px;
+}
+#foot-menu .sub > li:last-child:after {
+    content: '';
+}
+
+#foot-links {
+    display: inline-block;
+    font-family: 'Roboto Condensed';
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.4em;
+    border-left: 3px solid white;
+    padding: 8px 16px;
+    letter-spacing: .2px;
+    margin-bottom: 12px;
+}
+
+#foot-links a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+#foot-links a:hover {
+    text-decoration: underline;
+}
+
+#foot-logo {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 160px;
+    
+}
+
+#foot-logo img {
+    width: 100%;
+}
+
+
+#simple_foot {
+    background-color: white;
+    right: 0;
+    width: 325px;
+    padding: 2px;
+    background-image: url('/assets/images/bankcard_logo_with_simple_logo_482x40.png');
+    background-size: 90% auto;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#foot-right-wrap {
+    float: right;
+}
+
+
+/*** termekoldal **/
+
+.keret-cim {
+    
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+    padding: 6px 22px;
+    color: white;
+}
+
+
+.keret-cim.kek {
+    background-color: #009CDF;
+}
+
+.keret-cim h1 {
+    display: inline;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+.keret-cim h2:before {
+    content: ' | ';
+}
+
+.keret-cim h2 {
+    display: inline;
+    font-size: 18px;
+    letter-spacing: .2px;
+    
+}
+
+
+#kep-plusz-galeria {
+    float: left;
+    width: 370px;
+}
+
+#kep-wrap {
+    width: 295px;
+    height: 400px;
+    float: left;
+    margin-left: 22px;
+    margin-top: 35px;
+    position: relative;
+    
+}
+
+img.flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#nagyitas {
+    display: block;
+    overflow: hidden;
+}
+
+
+#lupe {
+    background-image: url('/assets/images/lupe.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 72px;
+    height: 72px;
+    transition: .2s;
+}
+
+#nagyitas:hover #lupe {
+    transform: scale(1.1);
+}
+
+#maras {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#galeria-wrap {
+    margin-left: 27px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 22px;
+    margin-top: 12px;
+}
+
+#galeria-wrap div {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+#galeria-wrap div:last-child {
+    margin-right: 0;
+}
+
+#product-text-wrap {
+    margin-top: 32px;
+    float: left;
+}
+
+h3[itemprop="name"] {
+    color: #0F70B7;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: .5px;
+}
+
+#product-text-wrap span[itemprop="description"] {
+    border-bottom: 1px solid #0F70B7;
+    color: #0F70B7;
+    font-size: 19px;
+    display: inline-block;
+    padding-bottom: 10px;
+    width: 230px;
+    letter-spacing: .4px;
+}
+
+#price-wrap {
+    border-bottom: 1px solid #0F70B7;
+    margin-top: 12px;
+    padding-bottom: 12px;
+    color: #0F70B7;
+    width: 230px;
+}
+
+.productpage-body {
+    overflow: hidden;
+    position: relative;
+}
+
+.productpage-body span[itemprop="price"] {
+    font-size: 19px;
+    font-weight: 700;
+    font-style: italic;    
+}
+
+#product-desc, #product-desc span[itemprop="description"] {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-top: 12px;
+    color: #4a4a4a;
+    border: none;
+}
+
+#product-desc {
+    overflow: scroll;
+    max-height: 280px;
+    width: 270px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #0F70B7;
+}
+
+
+#product-properties {
+    width: 230px;   
+    margin-top: 6px;
+    padding-top: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.8em;
+    margin-bottom: 25px;
+}
+
+#product-properties span {
+    font-weight: 400;
+    
+}
+
+
+#product-gomb-wrap .kosarba_gomb {
+    position: absolute;
+    right: 44px;
+    bottom: 40px;
+    
+}
+
+#termekoldal-db-select {
+    padding: 0px 40px 5px 0;
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+    background-color: #80CFF1;
+    background-image: url("/assets/images/select-nyil-2.png");
+    background-repeat:  no-repeat;
+    background-position: right 10px center;
+    position: absolute;
+    right: 32px;
+    top: 29px;    
+
+}
+
+#termekoldal-db-select select {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 900;
+    color: #d7edf7;
+    height: 36px;
+    width: 107px;
+}
+
+#termekoldal-db-select option {
+    font-size: 18px;
+    background: #75bbdd;
+    color: #dde9ef;
+}
+
+#form-options {
+    position: absolute;
+    right: 27px;
+    top: 81px;
+}
+
+#form-options .valaszto_form {
+    margin-top: 18px;
+}
+
+/** Fooldal **/
+#slider-img-wrap {
+    height: 300px;
+    overflow: hidden;
+    width: 20000px;
+}
+
+#slider-img-wrap img {
+    display: inline-block;
+    transition: .5s;
+}
+
+#slider-img-wrap img.past {
+    margin-left: -990px;   
+}
+
+
+.slide-nyil {
+    position: absolute;
+    top: 128px;
+    background-repeat: no-repeat;
+    width: 53px;
+    height: 46px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.slide-nyil:hover {
+    opacity: .9;
+}
+
+.slide-nyil.disabled {
+    opacity: 0.2;
+    cursor: inherit;
+}
+
+#slide-prev {
+    background-image: url('/assets/images/slider-prev.png');
+    left: 20px;
+}
+
+#slide-prev:hover {
+    transform: translateX(-4px);
+}
+#slide-prev.disabled:hover,
+#slide-next.disabled:hover
+{
+    transform: none;
+}
+
+#slide-next {
+    background-image: url('/assets/images/slider-next.png');
+    right: 20px;
+}
+
+#slide-next:hover {
+    transform: translateX(4px);
+}
+
+
+#csomagajanlatok-cim {
+    background-color: red;
+}
+
+.fokeret.piros {
+    border-color: red;
+   
+}
+
+#kiemelt-termekek-cim {
+    background-color: #009CDF;    
+}
+
+.kis-keret-cim h1 {
+    display: inline;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+#fooldal-box-wrap {
+    padding: 8px 0 0;
+    height: 105px;
+}
+
+.fooldal-box {
+    position: absolute;
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.2em;
+    letter-spacing: .4px;
+    font-weight: 300;
+    min-height: 90px;
+    padding: 8px;
+    transition: .2s;
+}
+
+.fooldal-box strong {
+    font-weight: 900;   
+}
+
+.fooldal-box:hover {
+
+    transform: translateY(2px);
+
+}
+
+
+#info-box {
+    display: table;
+    height: 90px;
+    width: 380px;   
+    background-color: #009FE3;
+    margin-right: 3px;
+}
+
+#info-box p {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#info-box a {
+    color: inherit;
+    font-style: italic;
+}
+
+#abc-box {
+    left: 400px;
+    width: 325px;
+    background-color: #F29400;
+    margin-right: 3px;
+}
+
+#chat-box {
+    left: 745px;
+    width: 235px;
+    background-color: #8B04A7;
+}
+
+
+.fooldal-box h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    height: 28px;
+    padding: 19px 0 0 63px;
+    margin-bottom: 9px;
+    letter-spacing: 1px;
+}
+
+.fooldal-box h2.icon-inbox {
+    background-image: url('/assets/images/icon-inbox.png');   
+}
+
+.fooldal-box h2.icon-chat {
+    background-image: url('/assets/images/icon-chat.png');   
+}
+
+
+#mester1 {
+    background-image: url("/assets/images/mester8-1.png");
+    position: absolute;
+    width: 353px;
+/*    height: 945px;*/
+    height: 830px;    
+    top: 53px;
+    left: -281px;
+    z-index: -1;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+#mester2 {
+    background-image: url("/assets/images/mester8-2.png");
+    position: absolute;
+    width: 268px;
+    height: 505px;
+    top: 138px;
+    right: -258px;
+    z-index: -1;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+#buborek1 {
+    background-image: url('/assets/images/buborek1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 194px;
+    height: 156px;
+    position: absolute;
+    top: -39px;
+    left: 101px;    
+}
+
+#buborek1 p {
+    color: #FFF;
+    position: absolute;
+    font-size: 26px;
+    top: 30px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.2em;
+}
+
+#buborek2 {
+    background-image: url('/assets/images/buborek2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 237px;
+    height: 189px;
+    position: absolute;
+    top: -150px;
+    left: -56px;   
+}
+
+#buborek2 p {
+    color: #FFF;
+    position: absolute;
+    font-size: 18px;
+    top: 33px;
+    text-align: left;
+    left: 79px;
+    line-height: 1.2em;
+}
+
+
+.racs-kosar-gomb {
+    font-size: 0;
+    color: transparent;
+    width: 28px;
+    height: 28px;
+    background-image: url('/assets/images/basket-kicsi-trans.png');
+    border: none;
+}
+
+.racs-wrap {
+    padding: 20px 22px;
+}
+
+.racs-img-wrap {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.racs-termek-wrap {
+    float: left;
+    min-width: 228px;
+    min-height: 208px;
+    position: relative;
+}
+
+.racs-text p {
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    margin-right: 8px;
+    line-height: 1.2em;
+    width: 170px;
+    margin: 0 auto;
+}
+
+.racs-termek-wrap form {
+    position: absolute;
+    right: 3px;
+    bottom: 21px;
+}
+
+.racs-termek-wrap .racs-kosar-gomb {
+    cursor: pointer;
+}
+
+.racs-text .racs-kosar-gomb {
+    float: left;
+    cursor: pointer;
+}
+
+.racs-kosar-gomb.vilagoskek {
+    background-color: #009FE3;
+}
+
+/*** Kosar ***/
+
+h3.icon-cart {
+    background-image: url("/assets/images/icon-kosar-23.png");
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    margin-top: 11px !important;
+    padding-top: 3px;
+    margin-left: 12px !important;
+}
+
+.szurke-gomb {
+    background-color: #747373;
+    border-radius: 12px;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 4px 10px 2px 22px;
+    background-repeat: no-repeat;
+    background-position: center left 4px;
+    cursor: pointer;
+}
+.szurke-gomb:hover {
+    background-color: #505050;
+}
+
+.torles-gomb {
+    background-image: url('/assets/images/icon-cancel.png');
+    
+}
+
+.kosar-sor .torles-gomb {
+    margin-top: 15px;
+    float: right;
+    margin-right: 12px;
+}
+
+
+.kosar-sor .price_wrap {
+    padding-top: 9px;
+}
+
+.kosar-sor .qty_inp {
+    background-color: #DFDFDF;
+    border-radius: 10px;
+    border: none;
+    padding: 3px 5px 3px 14px;
+    text-align: left;
+    margin: 0 8px;
+    width: 50px;
+    background-image: url('/assets/images/db.png');
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+}
+
+.kek-gomb {
+    background-color: #0F70B7;
+    border-radius: 10px;
+    color: white;
+}
+
+.kek-gomb:hover {
+    background-color: #165989;
+}
+
+
+.nagy-gomb {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.nagy-gomb:disabled {
+    cursor: inherit;
+    background: lightgray;
+}
+
+.nagy-gomb.icon-inbox {
+    background-image: url('/assets/images/icon-inbox.png');
+    background-repeat: no-repeat;
+    background-position: left 12px top 6px;
+    background-size: auto 60%;
+    padding-left: 60px;
+    font-weight: 700;
+}
+
+#productlist-footer .nagy-gomb {
+    float: right;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+.nagy-gomb.icon-pipa {
+    background-image: url('/assets/images/icon-pipa.png');
+    padding-left: 50px;
+    background-position: left 8px center;
+    background-repeat: no-repeat;
+}
+
+#abc_pdf {
+    margin-bottom: 22px;
+    text-transform: none;
+}
+
+.hide {
+    display: none;
+}
+
+.cart-body .product:nth-child(1):after, 
+.cart-body .product:nth-child(2):after {
+    border-bottom: 1px solid #009FE3;
+}
+
+
+/** Kosar **/
+
+.productlist-body {
+    min-height: 300px;   
+}
+
+.productlist-body .text-wrap {
+    margin: 24px;
+}
+
+.productlist-body h4 {
+    color: #009EE6;   
+    font-weight: 700;
+    font-size: 21px;
+}
+
+/** Kapcsolat oldal **/
+
+.keret-hasab,
+.keret-kethasab {
+    float: left;
+    margin-left: 2%;
+    margin-top: 16px;
+    position: relative;
+}
+
+.hasab-50 {
+    width: 47%;
+}
+
+.hasab-100 {
+    width: 99%;
+}
+
+#cim-adatok {
+    font-size: 14px;
+    line-height: 1.3em;
+    letter-spacing: .2px;
+}
+
+#cim-adatok a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#cim-adatok a:hover {
+    text-decoration: underline;
+}
+
+#cim-adatok h3 {
+    font-weight: 700;   
+}
+
+.keret-hasab iframe {
+    background-color: #E9E5DC;
+    margin-bottom: 22px;
+    margin-top: 22px;
+}
+
+.keret-hasab label {
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.keret-hasab label.block {
+    display: block;    
+}
+
+.keret-hasab input, 
+.keret-hasab textarea {
+    border: 1px solid #22ACE6;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 6px 12px;
+    color: #4d4d4d;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.keret-hasab input.szeles,
+.keret-hasab input[type="text"],
+.keret-hasab input[type="email"],
+.keret-hasab textarea {
+    width: 94%;
+}
+
+#uzenet-form {
+    margin-top: -30px;   
+}
+
+#uzenet-form textarea {
+    max-width: 442px;
+    min-width: 442px;
+    max-height: 164px;
+}
+
+#uzenet-kuld {
+    color: #FFF;
+    background-size: 25px auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 4px solid #0F70B7;
+    transform: scale(0.8);
+    position: absolute;
+    bottom: -17px;
+    margin-bottom: 0px;
+}
+
+.form_error {
+    color: red;
+    position: absolute;
+    right: 0;
+    margin-top: -16px;
+    font-size: 13px;
+}
+
+
+#kapcsolat_response {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 12px;
+    transition: .2s;
+    overflow: hidden;
+    -webkit-animation-name: response; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .5s; /* Chrome, Safari, Opera */
+    animation-name: response;
+    animation-duration: .5s;
+    padding: 8px 16px;
+    height: 16px;
+    
+}
+
+
+@-webkit-keyframes response {
+    0% {
+        height: 0px;
+        padding: 0px 16px;
+    }
+    
+    100% {
+        height: 16px;
+        padding: 8px 16px ;
+    }
+}
+
+@keyframes response {
+    0% {
+        height: 0px;
+        padding: 0px 16px;
+    }
+    
+    100% {
+        height: 16px;
+        padding: 8px 16px;
+    }
+}
+
+
+#kapcsolat_response.alert {
+    background-color: #d16565;
+    color: white;
+}
+
+#kapcsolat_response.resume {
+    background-color: #9ECB9E;
+    color: #063e06;
+}
+
+
+/*** Penztar **/
+
+.keret-hasab .select-style {
+    padding: 0px;
+    margin: 0px 12px 20px 0px;
+    border: 1px solid #0EABE9;
+    width: 99%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white url("/assets/images/select-nyil-3.png") no-repeat scroll 97% 50%;
+    display: inline-block;
+}
+
+
+.keret-hasab .select-style select {
+    padding: 4px 8px;
+    width: 105%;
+    height: 34px;
+    font-size: 18px;    
+    font-family: 'Roboto Condensed';
+    color: #4D4D4D;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    
+}
+
+.keret-hasab .select-style select:focus {
+    outline: none;
+}
+
+.keret-hasab .select-style select option {
+    font-size: 12px;
+}
+
+#same_address {
+    width: 16px;   
+}
+
+.keret-hasab h4 {
+    font-weight: 700;
+    color: #006EBA;
+    font-size: 16px;
+    margin-bottom: 12px;
+    letter-spacing: .2px;
+}
+
+
+.keret-aljara {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#user-notes {
+    margin-top: 33px;
+}
+
+#szallitas {
+    padding-bottom: 50px;   
+}
+
+textarea[name="user_notes"] {
+    min-height: 80px;
+}
+
+h2.red {
+    color: firebrick;
+}
+
+/*-- Ellenorzes ----*/
+
+#kosar_lista_wrap {
+    margin-left: 2%;
+    margin-top: 16px;
+}
+
+.elfogad {
+    position: absolute;
+    bottom: 16px;
+    right: 200px;
+}
+
+#ellenorzes h4 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+
+.kis-gomb {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding-left: 30px;
+    background-position: left 6px center;   
+}
+
+.szurke-gomb {
+    background-color: #747474;
+    border-radius: 20px;
+    color: white;
+}
+
+.szurke-gomb:hover {
+    background-color: #5d5d5d;
+}
+
+.icon-backspace {
+    background-image: url('/assets/images/icon-backspace.png');
+}
+
+.kek-vonal-alul {
+    font-size: 14px;
+}
+
+.table_gomb_wrap {
+    text-align: right;
+    padding-right: 12px;
+}
+
+.kek-vonal-alul  {
+    clear: both;
+    border-bottom: 1px solid #219CD6;   
+}
+
+/*.kek-vonal-alul tr:last-child td {
+    padding-bottom: 12px;   
+}*/
+
+
+#ellenorzes_table {
+    margin-bottom: 20px;   
+}
+
+#ellenorzes_table tr td {
+    padding-bottom: 6px;   
+}
+
+
+.osszesites-table {
+    border-collapse: initial;
+    line-height: 1.4em;
+    table-layout: fixed;
+    float: left;
+    width: 80%;
+    margin-bottom: 12px;
+}   
+
+.osszesites-table tr td:nth-child(1) {
+    width: 250px;
+}
+.osszesites-table tr td:nth-child(2) {
+    width: 350px;
+}
+.osszesites-table tr td:nth-child(3) {
+    width: 200px;
+    text-align: right;
+}
+
+
+#vegosszeg {
+    clear: both;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 24px;
+    height: 40px;   
+}
+
+#vegosszeg div:first-child {
+    float: left;
+}
+
+#vegosszeg div:last-child {
+    float: right;
+    margin-right: 20px;
+    color: #009BE2;
+    font-size: 30px;
+}
+
+#ell-price {
+    text-align: right;
+}
+
+.ellenorzes_item_info {
+    display: block;
+    font-size: 12px;
+    line-height: 1.2em;
+}
+
+
+
+/*** szoveges oldalak **/
+
+.fokeret-body {
+    margin: 20px;   
+    padding-bottom: 18px;
+}
+
+#err404 {
+    font-size: 20px;   
+    color: #009BE2;
+    margin: 24px;
+}
+
+.fokeret-body h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.fokeret-body h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    letter-spacing: .5px;
+}
+
+.fokeret-body {
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #222;
+}
+
+@media (max-width: 1200px) {
+ 
+    #mester1,
+    #mester2 {
+        opacity: 0;
+    }
+    
+}
+
+
+@media (max-width: 1000px) {
+    body {
+
+       overflow-x: scroll;
+    }
+    
+    
+}

@@ -1,0 +1,1789 @@
+html, body {
+    height:100%;
+    margin:0;
+}
+
+
+proba {
+    font-family: 'HeroicCondensed-Bold';
+    font-size: 40px;
+}
+
+ligproba {
+    font-family: 'HeroicCondensed-Light';
+    font-size: 40px;    
+}
+
+didotproba {
+    font-family: 'DidotHTF-06Bold';
+    font-size: 40px;    
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+header {
+    background: #808080;
+}
+
+.wrapper {
+    width: 1070px;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+}
+
+header .wrapper {
+    padding-bottom: 8px;
+    font-family: "HeroicCondensed-Light";        
+}
+
+#logo {
+    background-image: url('/assets/images/logo.svg');
+    background-size: 100% auto;
+    width: 155px;
+    height: 155px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#fomenu {
+    margin-left: 224px;
+    text-transform: uppercase;
+    font-size: 34px;
+    letter-spacing: 0.7px;
+}
+
+header li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+#fomenu li a {
+    width: 90px;
+    color: white;
+    text-decoration: none;
+    padding: 27px 0 10px;
+    display: block
+}
+
+
+#fomenu li a:hover {
+    background: #747272;   
+}
+
+#fomenu li.active a {
+    background: #EE1C25;
+    font-family: 'HeroicCondensed-Bold';
+    width: 80px;
+    margin-left: 5px;
+    margin-right: 5px;    
+    padding-bottom: 8px;    
+    box-shadow: 0 -3px 0 #EE1C25;
+}
+
+#fomenu li.active a:hover {
+    background: #db1a22;    
+    color: #f5dddd;
+}
+
+
+#searchField {
+    font-family: "HeroicCondensed-Light";
+    font-size: 25px;
+    position: absolute;
+    height: 36px;
+    top: 22px;
+    left: 550px;
+    border: medium none;
+    border-radius: 36px;
+    outline: medium none;
+    box-sizing: border-box;
+    color: #D7D5D5;
+    text-align: center;
+    background-color: #A0A0A0;
+    background-image: url("/assets/images/lupe.png");
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    padding: 7px 0 0 13px;
+    background-size: auto 100%;
+    min-width: 226px;
+}
+
+#searchField:hover {
+   background-color: #989898;    
+}
+
+#searchField:focus {
+    text-align: left;
+    cursor: pointer;
+    padding-left: 50px;
+    color: #F3F3F3;
+}
+
+#menu_wrap {
+    background: #3E3E3E;
+    box-shadow: -600px 0 0 #3E3E3E, 600px 0 0 #3E3E3E;
+    padding-bottom: 0px;    
+}
+
+#menu {
+    margin-left: 229px;
+    font-size: 26px;
+}
+
+
+#menu > ul > li > a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 17px 4px;
+    text-transform: uppercase;
+    
+}
+
+#menu > ul > li > a:hover {
+    background: #1f1f1f;
+}
+
+#menu > ul > li.active > a {
+    background: #1f1f1f;   
+}
+
+#menu > ul > li.active > a:hover {
+    color: #c4c4c4;
+}
+
+
+#kosar_gomb {
+    display: block;
+    background-image: url("/assets/images/kosar.svg");
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 26px;
+    top: -5px;
+    cursor: pointer;
+}
+
+#kosar_gomb:hover {
+    transform: scale(1.1);
+}
+
+#kosar_db {
+    background: black;
+    position: absolute;
+    min-width: 12px;
+    min-height: 12px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    padding: 2px 5px;
+    right: -5px;
+    top: -2px;    
+}
+
+#social {
+    position: absolute;
+    right: 4px;
+    top: 23px;
+}
+
+#social li {
+    cursor: pointer;
+    margin-right: 17px;
+}
+
+#social img {
+    transform: scale(0.9);
+}
+
+#social img:hover {
+    transform: scale(1);
+}
+
+ul.sub  {
+    position: absolute;
+    display: none;
+    left: 234px;
+    padding: 12px;
+    text-align: left;
+    width: 649px;
+    background: white;
+}
+
+.has_sub:hover > .sub {
+    display: block;   
+    z-index: 1;
+}
+
+.has_sub.active > .sub {
+    display: block;
+}
+
+.sub a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    
+}
+
+.sub li:after {
+    content: '/';   
+    margin-left: 4px;
+}
+
+.sub li:last-child:after {
+    content: '';
+}
+
+.sub a:hover {
+    text-decoration: underline;
+}
+
+
+.sub li.active a {
+    font-family: 'HeroicCondensed-Bold';
+}
+
+#belep_wrap {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    font-size: 18px;
+    z-index: 2;
+}
+
+#belep_wrap a {
+    background: #C0C0C0;
+    text-transform: uppercase;
+    padding: 6px 10px 2px;
+    color: black;
+    text-decoration: none;
+}
+#belep_wrap a:hover {
+    background: #a3a3a3;
+}
+
+#belep_wrap a:first-child {
+    border-radius: 15px 0 0 15px;  
+    margin-right: 2px;
+}
+
+#belep_wrap a:last-child {
+    border-radius: 0 15px 15px 0;   
+}
+
+#motto {
+    background: #808080 none repeat scroll 0% 0%;
+    width: 195px;
+    height: 321px;
+    float: left;
+    margin-right: 18px;
+    font-family: "DidotHTF-06Bold";
+    padding: 40px 39px 4px;
+    color: #FFF;
+    overflow: hidden;
+}
+
+
+#motto h4 {
+    text-transform: uppercase;
+    background-image: url("/assets/images/pontok1.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#motto p {
+    font-size: 13px;
+    line-height: 1.3em;
+    letter-spacing: 1.3px;
+    margin-top: 7px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#slider {
+    background-image: url('/assets/images/lampak.jpg');
+    width: 767px;
+    height: 365px;
+    float: left;
+}
+
+
+/*-----*/
+
+
+#product_wrap {
+    padding-top: 8px;
+    padding-bottom: 12px;
+    overflow: hidden;
+    min-height: 500px;    
+}
+
+#product_wrap.pad-bot {
+    padding-bottom: 322px;
+}
+
+
+.product {
+    float: left;
+    width: 356px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+    display: none;
+}
+
+.product a:hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: gray;
+    opacity: 0.05;
+}
+
+
+.product .product_thumb {
+    width: 350px;
+    height: 320px;
+    margin: 2px;
+    
+}
+
+.product .product-group .product_thumb {
+    width: auto;
+    height: 320px;
+    margin: 2px;    
+}
+
+.product_row .product:nth-child(1) {
+    background-image: url('/assets/images/pontok5.png');
+    background-position: right bottom;
+}
+
+.product_row .product:nth-child(2) {
+    background-image: url('/assets/images/pontok3.png'), url('/assets/images/pontok5.png'), url('/assets/images/pontok2.png'), url('/assets/images/pontok4.png');
+    background-position: left bottom, right bottom, left bottom, left top;
+    
+}
+
+.product_row .product:nth-child(3) {
+    background-image: url('/assets/images/pontok3.png'), url('/assets/images/pontok2.png'), url('/assets/images/pontok4.png');
+    background-position: left bottom, left bottom, left top;
+}
+
+
+.product_row:first-child .product:nth-child(2) {
+    background-image: url('/assets/images/pontok3.png'), url('/assets/images/pontok5.png'), url('/assets/images/pontok2.png');
+    background-position: left bottom, right bottom, left bottom;
+}
+
+.product_row:first-child .product:nth-child(3) {
+    background-image:  url('/assets/images/pontok2.png'), url('/assets/images/pontok3.png');
+    background-position: left bottom, left bottom;
+}
+
+
+
+.product_row:last-child .product:nth-child(2) {
+    background-image: url('/assets/images/pontok4.png');
+    background-position: left top;
+}
+
+.product_row:last-child .product:nth-child(1){
+    background: none;
+}
+
+.product_row:last-child .product:nth-child(3){
+    background-image: url('/assets/images/pontok4.png');
+    background-position: left top;
+}
+
+
+
+.price_wrap {
+    background-color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    color: white;
+    text-decoration: none;
+    padding: 14px 15px 4px 18px;
+}
+
+
+.price_wrap span {
+    display: block;
+}
+
+
+.price_wrap span[itemprop="name"] {
+    font-family: 'HeroicCondensed-Bold';       
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.price_wrap span[itemprop="description"] {
+    font-family: 'HeroicCondensed-Light';
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+}
+
+.price_wrap span[itemprop="price"] {
+    font-family: 'HeroicCondensed-Bold';       
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+
+
+/*-footer---*/
+
+footer {
+    background: #313131;
+    font-family: 'HeroicCondensed-Light';       
+    color: white;
+    font-size: 19px;
+    line-height: 1.1em;
+    letter-spacing: .2px;
+    margin-top: 40px;
+}
+
+footer h4 {
+    font-family: 'HeroicCondensed-Medium';   
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .wrapper {
+    height:180px;
+    display:flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+}
+
+#foot_logo {
+    background-image: url('/assets/images/logo.svg');
+    width:180px;
+}
+
+#foot_text {
+    -webkit-flex: 1;
+    flex:1;
+    position:relative;
+}
+
+#foot_text div {
+    float: left;
+    padding: 20px 22px;
+    background-image: url("/assets/images/pontok8.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 138px;
+    transform: scale(1.1,1);
+    margin-left: 15px;    
+}
+
+#foot_text div:first-child {
+    width: 320px;
+}
+
+#foot_text div:nth-child(2) {
+    width: 140px;
+    text-transform: uppercase;
+    padding-left: 27px;
+}
+
+
+#karyak {
+    margin-top: 12px;   
+    width: 244px;
+    background-color: white;
+    background-image: url('/assets/images/bankcard_logo_with_simple_logo_482x40.png');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 98% auto;
+    background-position: center center;
+    height: 20px;
+    padding: 2px;
+}
+
+p.indent {
+    margin-left: 71px;
+}
+
+
+/****/
+
+
+/**** Termek ****/
+#product_wrapper {
+    padding-bottom: 15px;
+}
+
+
+#product_detail_wrap {
+    margin-top: 54px; 
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+ #product_detail_wrap #detail_wrap > span[itemprop="name"] {
+    font-family: 'HeroicCondensed-Bold';
+     font-size: 40px;
+     text-transform: uppercase;
+     display: block;
+ }
+
+
+#product_detail_wrap span[itemprop="alternateName"] {
+    font-family: 'HeroicCondensed-Bold';
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.1em;
+    display: block;
+}
+
+
+
+#product_detail_wrap span[itemprop="description"] {
+    font-family: 'HeroicCondensed-Light';
+    font-size: 18px;
+    min-height: 50px;
+    margin-bottom: 36px;
+    line-height: 1.2em;
+    display: block;
+}
+
+
+#product_detail_wrap div[itemprop="additionalProperty"] {
+    font-family: 'HeroicCondensed-Medium';
+    font-size: 19px;
+    line-height: 1.2em;
+    display: inline;
+}
+
+#product_detail_wrap div[itemprop="additionalProperty"]:after {
+    content: '/ ';   
+}
+
+#product_detail_wrap div[itemprop="additionalProperty"]:last-child:after {
+    content: '';
+}
+
+#itemprop-wrap {
+    overflow: hidden;
+    margin-bottom: 22px;
+    min-height: 47px;
+}
+
+#product_detail_wrap span[itemprop="price"],
+#product_detail_wrap span[itemprop="priceCurrency"] {
+    font-family: 'HeroicCondensed-Bold';
+     font-size: 38px;
+}
+
+#product_detail_wrap span[itemprop="priceCurrency"] {
+    margin-left: 8px;
+}
+
+#detail_wrap {
+    float: left;
+    width: 400px;
+    padding: 50px 0 0 50px;
+}
+
+#product_detail_wrap div[itemprop="offers"] {
+    margin-bottom: 12px;
+}
+
+#share_buttons {
+    margin-bottom: 12px;   
+}
+
+#share_buttons li {
+    display: inline-block;
+}
+
+#share_buttons li:active {
+    opacity: .7;
+}
+
+.valaszto_form {
+    float: left;
+}
+
+
+.select-style-2 {
+    padding: 8px 0px 8px 21px;
+    margin: 5px 12px 25px 27px;
+    border: medium none;
+    width: 210px;
+    background: #D7D7D7 url("/assets/images/select-nyil.gif") no-repeat scroll 96% 50%;
+    display: inline-block;
+    position: relative;
+
+}
+
+.select-style-2 select {
+    padding: 4px 8px;
+    width: 105%;
+    font-size: 14px;    
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+        cursor: pointer;
+
+}
+
+.select-style-2 select:focus {
+    outline: none;
+}
+
+
+#szinvalaszto:before {
+    content: '';
+    background-image: url('/assets/images/szinvalaszto.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: -25px;
+    top: -1px;    
+}
+
+#meretvalaszto:before {
+    content: '';
+    background-image: url('/assets/images/meretvalaszto.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: -25px;
+    top: -1px;    
+}
+
+
+
+#menny_kosarba {
+    font-family: "HeroicCondensed-Bold";
+    font-size: 19px;
+    width: 47px;
+    text-align: center;
+    padding-top: 7px;
+    margin: 4px 0;
+}
+
+.menny_valt {
+    background-color: transparent;
+    border: medium none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0px 2px 4px;
+    transition: .1s;
+}
+
+.menny_valt:hover {
+    background-color: #cecece;
+}
+
+#menny_form {
+    position: relative;
+    min-height: 55px;    
+}
+
+#menny_wrap {
+    overflow: hidden;
+    background-color: #D7D7D7;
+    position: absolute;
+    left: 36px;
+    top: 4px;
+    padding-left: 18px;
+    padding-right: 7px;
+}
+
+#kosarba_gomb {
+    background-image: url('/assets/images/kosar.svg');
+    color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+}
+
+#kosarba_gomb:hover {
+    opacity: .8;
+}
+
+
+#prod_image_wrap {
+    float: left;
+    width: 555px;
+    padding: 40px 0 0 0;
+    position: relative;
+}
+#prodImage {
+    min-width: 600px;
+    min-height: 420px;
+    text-align: center;
+}
+
+#prodImage img {
+    height: 420px;
+    width: auto;
+}
+
+#product_gallery {
+    margin-top: 18px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+#product_gallery img {
+    height: 72px;
+    width: auto;
+    display: inline-block;
+    margin-right: 8px;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+#product_gallery img:hover {
+    opacity: 1;
+}
+
+#hasonlok_wrap {
+    width: 100%;   
+    clear: both;   
+    background-image: url('/assets/images/pontok6.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 15px;
+}
+
+#hasonlok_wrap h4 {
+    font-family: 'HeroicCondensed-Light';
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: 12px;
+}
+
+#hasonlok {
+    margin-top: 12px;
+    padding-bottom: 12px;   
+    overflow: hidden;
+}
+
+
+#hasonlok img {
+    float: left;
+    display: block;
+    height: 75px;
+    border: 1px solid black;
+    padding: 15px 5px;
+    margin-right: 12px;
+    
+}
+
+
+
+#loadingImg {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 200px;
+    
+}
+
+
+/******/
+
+#slide_wrap {
+    overflow: hidden;
+    margin-top: 54px;   
+}
+    
+
+#slider_img_wrap {
+    width: 767px;
+    height: 365px;
+    float: left;
+}
+
+#sliderImg {
+    width: 767px;
+    height: 365px;       
+}
+
+.style_img_col {
+    width: 354px;
+    height: 257px;
+    float: left;
+    margin-right: 4px;
+    margin-top: 4px;    
+    position: relative;
+    overflow: hidden;
+}
+
+.col_3, .col_3 img {
+    width: 354px;
+    height: 257px;
+    border: none;
+}
+
+.col_4, .col_4 img {
+    width: 264px;
+    height: 264px;
+    border: none;
+}
+
+.col_2, .col_2 img {
+    width: 532px;
+    height: 264px;
+    border: none;    
+}
+
+.style_img_col img, .style_img_col span {
+    transition: 1.5s;
+}
+
+.style_img_col:hover img {
+    width: 105%;
+    height: 105%;
+    margin-left: -2%;
+    margin-top: -1%;
+}
+
+.style_img_col:hover span {
+   /* transform: scale(1.1); */
+    background: rgba(0,0,0,.85);
+}
+
+.style_img_col:last-child, .style_img_col.lastChild {
+    margin-right: 0;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.style_img_col span {
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+    font-family: 'DidotHTF-06Bold';
+    color: white;
+    position: absolute;
+    font-size: 26px;
+    text-align: center;
+    padding: 12px 0;
+    width: 100%;
+    top: 18px;
+    left: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: .8;
+}
+
+
+#stilus_wrap {
+    margin-top: 18px;   
+    margin-bottom: 18px;   
+    overflow: hidden;
+}
+
+
+#fooldal_slider_img_wrap {
+    width: 1070px;
+    height: 352px;
+}
+
+#fooldal_slider_img_wrap img {
+    width: 1070px;
+    height: 352px;    
+}
+
+#montazs_wrap {
+    overflow: hidden;
+    font-size: 0;
+}
+
+#montazs_wrap a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: left;    
+}
+
+/*#montazs_wrap div a:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.03);
+    z-index: 1;
+}*/
+
+#montazs_wrap img {
+    transition: 1s;
+}
+
+#montazs_wrap a:hover img{
+    transform: scale(1.02);
+}
+
+#montazs_wrap div {
+    clear: both;
+    
+}
+
+#fooldal_foot {
+    height: 64px;
+    position: relative;
+    top: -50px;
+    z-index: -1;
+    margin-bottom: -64px;
+}
+
+#bemutatkozas p {
+    font-family: "HeroicCondensed-Light";
+    font-size: 17px;
+    line-height: 1.1em;
+    margin: 5px 0;
+    letter-spacing: .2px;
+}
+
+#bemutatkozas h4 {
+    font-family: 'DidotHTF-06Bold';
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+#bemutatkozas {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 730px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    bottom: 18px;
+    padding: 22px;
+}
+
+
+/*--- kosar    -----*/
+
+#kosar_wrap {
+    overflow: hidden;
+    margin-top: 54px;
+    min-height: 73%;
+}
+
+.content_wrapper {
+    overflow: hidden;
+    margin-top: 54px;
+    min-height: 73%;
+}
+
+
+.content_wrapper h3 {
+    background-image: url('/assets/images/pontok7.png'), url('/assets/images/pontok7.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, top;
+	font-family:'HeroicCondensed-Medium';
+    font-size: 35px;
+    line-height: 1.2em;
+    padding-top: 12px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.content_wrapper > h4 {
+    margin-top: 24px;
+    margin-bottom: 4px;
+    font-family: 'HeroicCondensed-Medium';
+    font-size: 24px;
+    
+}
+
+.content_wrapper p {
+    font-family: 'HeroicCondensed-Light';
+    font-size: 24px;
+    line-height: 1.2em;
+    
+}
+
+.cart_item_wrap {
+    overflow: hidden;
+    padding-top: 12px;
+    position: relative;
+    width: 98%;
+    background-image: url('/assets/images/pontok7.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.cart_item_wrap:first-child {
+    padding-top: 30px;   
+}
+
+.cart_item_wrap img {
+    max-width: 130px;
+    max-height: 120px;
+    margin-top: -20px;    
+}
+
+.kosar_kep_wrap {
+    float: left;
+    width: 130px;
+    height: 120px;
+    text-align: center;
+    margin: 2px 0;
+    
+}
+
+.cart_item_wrap h4 {
+	font-family:'HeroicCondensed-Medium';
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1em;
+    margin-bottom: 0;
+    letter-spacing: .3px;
+
+    
+}
+
+.cart_item_wrap h4 span.perdb {
+    font-size: 16px;
+    text-transform: lowercase;
+    
+}
+
+.cart_text {
+    float: left;
+    width: 620px;    
+}
+
+
+
+.cart_text p {
+    font-family: 'HeroicCondensed-Light';
+    font-size: 17px;
+    line-height: 1.1em;
+    margin: 0;
+}
+
+
+#kosar_lista_wrap {
+    width: 800px;
+    float: left;
+    padding-bottom: 31px;    
+}
+
+.qty_inp {
+    background: #C0C0C0;
+    border-radius: 12px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    width: 44px;
+}
+
+.cart_item_wrap label {
+    font-family: 'HeroicCondensed-Light';
+    font-size: 17px;
+}
+
+.subtotal_table {
+    position: absolute;
+    bottom: 22px;
+
+}
+
+.subtotal_table td {
+    vertical-align: middle;
+    padding-right: 5px;
+
+}
+
+.subtotal {
+	font-family:'HeroicCondensed-Medium';
+    font-size: 28px;
+    color: red;
+    padding-top: 6px;
+    width: 93px;    
+    text-align: right;
+}
+
+.subtotal_table .torles_gomb {
+    width: 430px;
+    text-align: right;
+}
+
+.subtotal_table .torles_gomb input {
+	font-family:'HeroicCondensed-Medium';
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    background: gray;
+    border: none;
+    border-radius: 22px;
+    padding: 7px 15px 0px;
+    letter-spacing: 0.3px;
+    line-height: .8em;
+    cursor: pointer;
+}
+
+.subtotal_table .torles_gomb input:hover {
+    background: black;   
+}
+
+#osszesites {
+    border: black 2px solid;
+    width: 264px;
+    margin-top: 15px;
+    float: left;
+    min-height: 150px;
+    position: relative;
+	font-family:'HeroicCondensed-Medium';
+    
+    
+}
+
+
+#osszesites h3 {
+    background: black;
+    color: white;
+    width: 100%;
+    font-size: 23px;
+    letter-spacing: .2px;
+    
+}
+
+
+#osszesites td {
+    padding: 10px 10px 6px;
+    font-size:  34px;
+}
+
+#osszesites .total td {
+    padding-top: 12px;
+}
+
+#osszesites table {
+    width: 260px;
+    margin-top: 12px;
+}
+
+#osszesites table tr td:first-child {
+    text-transform: uppercase;
+}
+
+#osszesites table tr td:last-child {
+    text-align: right;
+    color: red;
+}
+
+#osszesites .sub {
+    background-image: url('/assets/images/pontok7.png');
+    background-repeat: no-repeat;
+    background-position: left 10px bottom;
+}
+
+#osszesites .sub td {
+    font-size: 24px;
+}
+
+
+#ures_kosar {
+	font-family:'HeroicCondensed-Medium';    
+    display: block;
+    margin-top: 24px;
+    font-size: 32px;
+    font-size: 24px;
+    
+}
+
+
+.lista_kosar_gomb {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: none;
+}
+
+.product:hover .lista_kosar_gomb {
+    display: block;
+    z-index: 20;
+}
+
+
+.altalanos_gomb {
+    display: inline-block;
+    padding: 10px 22px 2px;
+	font-family:'HeroicCondensed-Medium';
+    text-transform: uppercase;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.altalanos_gomb:hover {
+    opacity: .8;
+}
+
+.piros_gomb {
+    background: #FF1800;
+    color: white;    
+}
+
+.altalanos_gomb:disabled {
+    background: gray !important;
+    cursor: inherit;
+    opacity: .6 !important;
+    
+}
+
+.altalanos_gomb:disabled:hover {
+    opacity: .6 !important;
+}
+
+.szurke_gomb {
+    background: #949494;
+    color: white;
+}
+
+.kis_gomb {
+    font-size: 16px;
+    padding: 5px 14px 1px;
+    margin-top: 0;
+}
+
+#penztarhoz {
+    float: right;
+    margin-right: 22px;
+}
+
+
+/*  Kepszerkesztes */
+
+.kepszerkesztes {
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    display: none;
+    z-index: 5;
+}
+
+.product:hover .kepszerkesztes {
+    display: block;
+}
+
+.product.szerkesztett:hover .kepszerkesztes {
+    display: none;
+}
+
+.product:hover.szerkesztett .lista_kosar_gomb {
+    display: none;
+}
+
+#kepform {
+    position: absolute;
+    top: 325px;
+    left: 1px;
+    background: rgba(0, 0, 0, 0.72) none repeat scroll 0% 0%;
+    padding: 9px;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    width: 300px;
+    text-align: right;
+    padding-right: 41px;
+    box-shadow: 0px 20px 20px rgba(0,0,0,.6);
+
+}
+
+#kepform input {
+    margin: 3px;   
+}
+
+.product.szerkesztett {
+    overflow: visible;
+    z-index: 15;
+}
+
+
+#edit_wrap {
+    transition: .2s;    
+    text-align: center;
+    box-shadow: 0px 0px 20px black;
+    overflow: hidden;
+    width: 350px;
+    height: 320px;
+    margin: 2px;
+    background: white;
+}
+
+#img_wrap {
+    overflow: hidden;
+}
+    
+.product.szerkesztesre_var:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255,255,255,.3);
+    background-image: url('/assets/images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+.termek_szerkesztes {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: none;
+    z-index: 5;
+}
+
+.product:hover .termek_szerkesztes {
+    display: block;
+}
+
+
+
+/* Penztar */
+
+#penztar_wrap {
+    overflow: hidden;
+    margin-top: 54px;
+    min-height: 65%;    
+}
+
+
+
+#fizetes_ideje {
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    padding-left: 19px;    
+}
+
+#szemelyes:checked + #fizetes_ideje  {
+    height: 50px;
+    
+}
+
+#penztar_form_wrap {
+    width: 800px;
+    float: left;
+}
+
+#penztar_form h4 {
+    font-family: 'HeroicCondensed-Medium';
+    font-size: 18px;
+    margin-top: 22px;
+}
+
+#penztar_form label, #penztar_form h5 {
+    font-family: 'HeroicCondensed-Light';
+    font-size: 18px;
+}
+
+#penztar_form input[type="text"],
+#penztar_form input[type="email"]
+{
+    font-size: 14px;
+    border: none;
+    background-color: #BDBDBD;
+    border-radius: 22px;
+    padding: 3px 12px;
+    letter-spacing: 1px;
+    margin: 4px;
+    margin-right: 12px;
+    
+}
+
+
+.select-style {
+    padding: 0;
+    margin: 4px 12px -5px 0px;
+    border: none;
+    width: 160px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    background: #BDBDBD url("/assets/images/select-nyil.gif") no-repeat 96% 50%;
+    display: inline-block;
+
+}
+
+.select-style select {
+    padding: 4px 8px;
+    width: 130%;
+    font-size: 14px;    
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.select-style select option {
+    font-size: 12px;
+}
+
+#penztar_form #name {
+    width: 507px;   
+}
+
+#penztar_form #city {
+    width: 280px;
+}
+
+#penztar_form #zip {
+    width: 136px;
+}
+
+#penztar_form #address {
+    width: 460px;
+}
+
+#penztar_form #phone {
+    width: 260px;
+}
+
+#penztar_form #email {
+    width: 320px;
+}
+
+#penztar_form #bill_city {
+    width: 280px;
+}
+
+#penztar_form #bill_zip {
+    width: 136px;
+}
+
+
+
+#delivery_mode {
+    width: 260px;
+    margin-bottom: 10px;
+}
+
+#penztar_form #paying_method {
+    width: 260px;
+    margin-bottom: 10px;
+}
+
+#megrendel_gomb {
+    margin-top: 22px;
+    margin-bottom: 30px;
+}
+
+
+#szamlacim_wrap {
+    height: 140px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+#same_address:checked ~ #szamlacim_wrap {
+    height: 0;   
+}
+
+
+
+/**** Elllenorzes ***/
+
+#megrendelo_ell {
+    font-family: 'HeroicCondensed-Light';
+    font-size: 24px;
+    background-image: url('/assets/images/pontok7.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 98%;
+}
+
+#megrendelo_ell td {
+    min-width: 130px;
+}
+
+#megrendelo_ell tr:last-child td {
+    padding-bottom: 22px;   
+}
+
+
+#ellenorzes_table {
+    font-family: 'HeroicCondensed-Medium';
+    font-size: 24px;
+    background-image: url('/assets/images/pontok7.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 98%;    
+    margin-bottom: 22px;
+
+}
+
+    
+#ellenorzes_table td {
+    padding: 8px 16px 0 0;
+    min-width: 130px;
+}
+
+#ellenorzes_table td:first-child {
+    text-transform: uppercase;
+}
+
+#ellenorzes_table tr:last-child td {
+    padding-bottom: 12px;   
+}
+
+
+#ellenorzes_table td:nth-child(n+2) {
+    text-align: right;
+}
+
+#kosar_lista_wrap h4 {
+    font-family: 'HeroicCondensed-Medium';
+    font-size: 24px;
+    margin-top: 22px;
+    margin-bottom: 3px;
+}
+
+.ellenorzes_item_info {
+    font-family: 'HeroicCondensed-Light';
+    text-transform: lowercase;
+}
+
+
+#payment_button {
+    float: right;
+    margin-right: 22px;
+}
+
+.table_gomb_wrap, #ellenorzes_table td.table_gomb_wrap {
+    text-align: right;
+    padding-right: 20px;
+    vertical-align: bottom;
+    padding-bottom: 16px;
+}
+
+
+.form_felhasab {
+    float: left;
+    width: 299px;
+}
+
+
+.text_wrap {
+    font-family: 'HeroicCondensed-Light';
+    font-size: 24px;
+    line-height: 1.2em;
+}
+
+.text_wrap strong {
+    font-weight: normal;
+    font-family: 'HeroicCondensed-Medium';   
+}
+
+.text_wrap h3 {
+    margin-bottom: 22px;   
+}
+
+p.green {
+    color: #1f831f;
+}
+
+p.big {
+    font-size: 32px;   
+}
+
+p.red {
+    color: firebrick;
+}
+
+#payu_atiranyitas {
+    text-align: center;
+}
+
+#payu_preload {
+    width: 127px;
+}
+
+#boltkep {
+    float: left;
+    
+}
+
+#cim_wrap {
+    float: left;
+    margin-left: 12px;
+    background-image: url('/assets/images/pontok9.png');
+    background-repeat: repeat-y;
+    background-position: right;
+    height: 266px;
+    padding-right: 22px;
+}
+
+#cim_wrap h4 {
+    font-family: 'HeroicCondensed-Medium';   
+    font-size: 24px;
+}
+
+.margin_bottom {
+    margin-bottom: 21px;
+}
+
+.margin_top {
+    margin-top: 21px;
+}
+
+#kapcsolat_form {
+    float: left;
+    padding-left: 12px;
+    width: 450px;
+}
+
+#kapcsolat_form input[type="text"],
+#kapcsolat_form input[type="email"],
+#kapcsolat_form textarea {
+    background: #BFBFBF;
+    border: none;
+    border-radius: 22px;
+    font-family: 'HeroicCondensed-Medium';
+    font-size: 22px;
+    padding: 6px 12px 0;
+    display: block;
+    width: 420px;
+    margin-bottom: 6px;
+    max-width: 420px;
+}
+#kapcsolat_form textarea {
+    min-height: 110px;
+    padding-top: 12px;
+}
+
+#kapcsolat_form p {
+    margin-bottom: 12px;
+}
+
+input[name="kapcsolat_submit"] {
+    float: right;
+}
+
+#terkep {
+    background-color: #E9E5DC;
+}
+
+#kapcsolat_response {
+    width: 200px;
+    float: left;
+    font-family: "HeroicCondensed-Light";
+    border-radius: 19px;
+    font-size: 22px;
+    margin-top: 12px;
+    transition: .2s;
+    overflow: hidden;
+    -webkit-animation-name: response; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .5s; /* Chrome, Safari, Opera */
+    animation-name: response;
+    animation-duration: .5s;
+    padding: 11px 16px 5px;
+    
+}
+
+
+@-webkit-keyframes response {
+    0% {
+        height: 0px;
+        padding: 0px 16px 0px;
+    }
+    
+    100% {
+        height: 23px;
+        padding: 11px 16px 5px;
+    }
+}
+
+@keyframes response {
+    0% {
+        height: 0px;
+        padding: 0px 16px 0px;
+    }
+    
+    100% {
+        height: 23px;
+        padding: 11px 16px 5px;
+    }
+}
+
+
+#kapcsolat_response.alert {
+    background-color: #d16565;
+    color: white;
+}
+
+#kapcsolat_response.resume {
+    background-color: #9ECB9E;
+    color: #063e06;
+}
+
+.error {
+    font-family: 'HeroicCondensed-Medium';
+    color: red;
+    font-size: 20px;
+    letter-spacing: .3px;
+}

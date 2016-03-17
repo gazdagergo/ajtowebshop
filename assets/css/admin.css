@@ -1,0 +1,17 @@
+
+/*-----*/
+
+.crud-form .container {
+    width: 100% !important;   
+}
+
+.subheader {
+    font-weight: normal;
+    color: #7e7c7c;
+}
+
+
+
+.crud-form .search-field input {
+    min-height: 25px;   
+}

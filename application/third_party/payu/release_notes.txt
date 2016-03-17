@@ -1,0 +1,67 @@
+PayU PHP SDK
+
+2.1.5
+2015.02.03.
+----------
+Funkciók
+    Egyszerűsített BackRef kezelés
+    Egységesített cURL és file_get_contents() használat
+    Váltási lehetőség cURL és file_get_contents() használata között
+    Automatikusan ismétlődő IOS hívás, ha a szervert nem sikerül elérni
+    
+2.1.4
+2014.12.13.
+----------
+Funkciók
+    Rugalmasabb devizanem kezelés
+        Az alapértelmezett devizanemek mellett fel lehet venni továbbiakat is a config.php-ban
+    
+2.1.3
+2014.11.28.
+----------
+Funkciók
+    Utánvét fizetési mód eltávolítása
+    
+2.1.2
+2014.10.06.
+----------
+Funkciók
+    Új teszt bankkártya adatok
+    PayU mobile fizetési mód eltávolítása
+    cURL és XML fájl tartalom közötti dinamikus váltás az IOS-ben
+
+2.1.1
+2014.06.03.
+----------
+Hibajavítások
+	IPN 
+		WIRE és CASH fizetési módok hiányzó IPN kezelésének pótlása
+	
+2.1
+2014.05.08.
+----------
+Funkciók
+	Új HTML5 GUI
+	Log felolvasás a BacRref oldalon
+	IRN indítás lehetősége a BackRef oldalról
+	IDN indítás lehetősége a BackRef oldalról
+	Demo GUI nélküli mintafájlok (nogui.zip)
+	BackRef protokoll vizsgálat kibővítése további $_SERVER változókkal
+		Hozzáadot változók: HTTP_X_FORWARDED_SSL, HTTPS, HTTP_X_FORWARDED_PROTO
+	Új AMEX logóval kiegészített kártyatársasági logo 
+	Devizanem alapú dinamikus kereskedői fiók váltás
+		HUF, EUR és USD fiókok párhuzamos kezelése
+
+Hibajavítások
+	IOS cURL setopt hiba javítása
+		CURLOPT_POST használata CURLOPT_GET helyett
+	HTML form létrehozó függvények és requestCurl() paraméter különbségek megszüntetése	
+
+2.0 
+2014.01.08.
+----------
+Eredeti kiadás
+
+Funkciók
+	SDK HTML GUI-vel ellátva
+	
